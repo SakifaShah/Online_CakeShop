@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/tab8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:id="@+id/image"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/floating_settings_bg_themed2"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/button1"
+            android:background="@drawable/floating_settings_bg_themed3"
+            android:text="   SELECT YOUR CAKE   "
+            android:textColor="#ffffff" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cake Name"
+            android:id="@+id/editText1"
+            android:textStyle="bold"
+            android:textColorHint="#880E4F" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cake Price"
+            android:id="@+id/editText2"
+            android:textStyle="bold"
+            android:textColorHint="#880E4F" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock"
+            android:id="@+id/editText3"
+            android:textStyle="bold"
+            android:textColorHint="#880E4F" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/button2"
+            android:background="@drawable/floating_upload_themed_demo"
+            android:text="   UPLOAD   "
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bck44"
+    android:layout_height="match_parent"
+    tools:context="com.example.progga.myjustcake.presentation_layer.Shops_pl">
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/logout"
+        android:onClick="logout"
+        android:background="@drawable/floating_myshop_themed_demo"
+        android:text="logout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="20dp"
+
+            android:layout_height="wrap_content"></LinearLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/button"
+
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/button1"
+            android:onClick="visit"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/floating_myshop_themed_demo"
+            android:text= "       My Shop      " />
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"></LinearLayout>
+        <Button
+            android:id="@+id/button1"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:onClick="create"
+            android:textStyle="bold"
+            android:background="@drawable/floating_myshop_themed_demo"
+            android:text="   Create Shop   "/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="13dp"
+        android:textColor="#880E4F"
+        android:textStyle="italic"
+        android:text="Don't have any shop?Click the button to create one!!!"
+        android:textSize="28dp"/>
+
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="12dp"></android.support.v7.widget.RecyclerView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

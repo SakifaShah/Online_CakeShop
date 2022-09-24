@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.progga.myjustcake">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Application_layer.Registration_bl" />
+        <activity android:name=".Application_layer.Login_bl" />
+        <activity android:name=".presentation_layer.Shop_cakes_pl" />
+        <activity android:name=".Application_layer.CreateShop_bl" />
+        <activity android:name=".presentation_layer.MyShop_pl" />
+        <activity
+            android:name=".presentation_layer.Shop_info_pl"
+            android:label="@string/title_activity_shop_info"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".presentation_layer.Order_pl" />
+        <activity android:name=".Application_layer.Order2_bl" />
+        <activity android:name=".Application_layer.Update2_bl" />
+        <activity android:name=".presentation_layer.Welcome_pl">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation_layer.Shops_pl" />
+        <activity android:name=".Application_layer.Update_shop_bl" />
+
+        <activity android:name=".presentation_layer.My_orders_pl"></activity>
+    </application>
+
+</manifest>
